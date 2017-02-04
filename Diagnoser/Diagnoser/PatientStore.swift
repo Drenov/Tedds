@@ -1,5 +1,5 @@
 //
-//  Diagnoser.swift
+//  PatientStore.swift
 //  Diagnoser
 //
 //  Created by Andrii Mykhailov on 2/4/17.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-public protocol Diagnoser {
-    func diagnose(patient: Patient) -> Syndrome
+public protocol PatientStore {
+    
 }

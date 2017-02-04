@@ -8,35 +8,26 @@
 
 import Foundation
 
-private struct ToddsSyndromeDiagnoserConstants {
-    static let syndromeAge = 15
-    
-    static let hasMigrainesProbability = 25
-    static let ageProbability = 25
-    static let genderProbability = 25
-    static let usesDrugsProbability = 25
-}
-
 public class ToddsSyndromeDiagnoser: Diagnoser {
-    public func diagnose(patient: Patient) -> SyndromeProbability {
+    public func diagnose(patient: Patient) -> Syndrome {
         var probability: SyndromeProbability = 0
         
         if patient.hasMigraines {
-            probability += ToddsSyndromeDiagnoserConstants.hasMigrainesProbability
+            probability += ToddsSyndromeConstants.hasMigrainesProbability
         }
         
-        if patient.age <= ToddsSyndromeDiagnoserConstants.syndromeAge {
-            probability += ToddsSyndromeDiagnoserConstants.ageProbability
+        if patient.age <= ToddsSyndromeConstants.syndromeAge {
+            probability += ToddsSyndromeConstants.ageProbability
         }
         
         if patient.gender == .male {
-            probability += ToddsSyndromeDiagnoserConstants.genderProbability
+            probability += ToddsSyndromeConstants.genderProbability
         }
         
         if patient.usesDrugs {
-            probability += ToddsSyndromeDiagnoserConstants.usesDrugsProbability
+            probability += ToddsSyndromeConstants.usesDrugsProbability
         }
         
-        return probability
+        return ToddsSyndrome(probability: probability)
     }
 }
