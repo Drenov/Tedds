@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+public typealias SyndromeProbability = Int
+
+public protocol Diagnoser {
+    func diagnose(patient: Patient) -> SyndromeProbability
+}

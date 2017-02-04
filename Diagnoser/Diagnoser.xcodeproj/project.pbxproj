@@ -12,7 +12,7 @@
 		3A181AB61E4623E80017F0F2 /* Diagnoser.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A181AA81E4623E80017F0F2 /* Diagnoser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3A181AEF1E4624B30017F0F2 /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A181AEE1E4624B30017F0F2 /* Patient.swift */; };
 		3A181AF11E4624BD0017F0F2 /* Diagnoser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A181AF01E4624BD0017F0F2 /* Diagnoser.swift */; };
-		3A181AF31E4624D10017F0F2 /* Syndrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A181AF21E4624D10017F0F2 /* Syndrome.swift */; };
+		3A181AF51E4629AD0017F0F2 /* ToddsSyndromeDiagnoser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A181AF41E4629AD0017F0F2 /* ToddsSyndromeDiagnoser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +34,7 @@
 		3A181AB51E4623E80017F0F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A181AEE1E4624B30017F0F2 /* Patient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
 		3A181AF01E4624BD0017F0F2 /* Diagnoser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Diagnoser.swift; sourceTree = "<group>"; };
-		3A181AF21E4624D10017F0F2 /* Syndrome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Syndrome.swift; sourceTree = "<group>"; };
+		3A181AF41E4629AD0017F0F2 /* ToddsSyndromeDiagnoser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToddsSyndromeDiagnoser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +79,7 @@
 			children = (
 				3A181AEE1E4624B30017F0F2 /* Patient.swift */,
 				3A181AF01E4624BD0017F0F2 /* Diagnoser.swift */,
-				3A181AF21E4624D10017F0F2 /* Syndrome.swift */,
+				3A181AF41E4629AD0017F0F2 /* ToddsSyndromeDiagnoser.swift */,
 				3A181AA81E4623E80017F0F2 /* Diagnoser.h */,
 				3A181AA91E4623E80017F0F2 /* Info.plist */,
 			);
@@ -207,8 +207,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A181AF11E4624BD0017F0F2 /* Diagnoser.swift in Sources */,
+				3A181AF51E4629AD0017F0F2 /* ToddsSyndromeDiagnoser.swift in Sources */,
 				3A181AEF1E4624B30017F0F2 /* Patient.swift in Sources */,
-				3A181AF31E4624D10017F0F2 /* Syndrome.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
