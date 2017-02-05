@@ -11,26 +11,34 @@ import XCTest
 
 class DiagnoserTests: XCTestCase {
     
+    var diagnoser = ToddsSyndromeDiagnoser()
+    
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testToddsSyndromeDiagnoser() {
+        let patient1 = Patient(name: "Andrii", age: 32, gender: .male, hasMigraines: false, usesDrugs: false)
+        
+        let syndrome1 = diagnoser.diagnose(patient: patient1)
+        XCTAssertEqual(syndrome1.name, "Todd's Syndrome")
+        XCTAssertEqual(syndrome1.probability, 25)
+        
+        let patient2 = Patient(name: "John", age: 5, gender: .male, hasMigraines: true, usesDrugs: true)
+        
+        let syndrome2 = diagnoser.diagnose(patient: patient2)
+        XCTAssertEqual(syndrome2.name, "Todd's Syndrome")
+        XCTAssertEqual(syndrome2.probability, 100)
+        
+        let patient3 = Patient(name: "Ann", age: 15, gender: .female, hasMigraines: true, usesDrugs: false)
+        
+        let syndrome3 = diagnoser.diagnose(patient: patient3)
+        XCTAssertEqual(syndrome3.name, "Todd's Syndrome")
+        XCTAssertEqual(syndrome3.probability, 50)
     }
     
 }
