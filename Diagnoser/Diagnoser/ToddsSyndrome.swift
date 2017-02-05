@@ -9,6 +9,7 @@
 import Foundation
 
 internal struct ToddsSyndromeConstants {
+    static let syndromeName = "Todd's Syndrome"
     static let syndromeAge = 15
     
     static let hasMigrainesProbability = 25
@@ -18,11 +19,25 @@ internal struct ToddsSyndromeConstants {
 }
 
 public struct ToddsSyndrome: Syndrome {
-    public let name: String = "Todd's Syndrome"
+    public let name: String
     
     public let probability: SyndromeProbability
     
-    init(probability: SyndromeProbability) {
+    public init(probability: SyndromeProbability) {
+        self.name = ToddsSyndromeConstants.syndromeName
+        self.probability = probability
+    }
+}
+
+extension ToddsSyndrome: DictionaryRepresentable {
+    public init(dictionary: [String: Any]) throws {
+        guard let name = dictionary["name"] as? String,
+              let probability = dictionary["probability"] as? Int else {
+                
+            throw DictionaryRepresentableError.parsingFailed
+        }
+        
+        self.name = name
         self.probability = probability
     }
 }

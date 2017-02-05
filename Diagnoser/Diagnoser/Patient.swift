@@ -8,16 +8,51 @@
 
 import Foundation
 
-public enum Gender {
+public enum Gender: Int {
     case male
     case female
 }
 
-public protocol Patient {
-    var name: String { get }
-    var age: Int { get }
-    var gender: Gender { get }
+public class Patient: DictionaryRepresentable {
+    let name: String
+    let age: Int
+    let gender: Gender
     
-    var hasMigraines: Bool { get }
-    var usesDrugs: Bool { get }
+    let hasMigraines: Bool
+    let usesDrugs: Bool
+    
+    public init(name: String, age: Int, gender: Gender, hasMigraines: Bool, usesDrugs: Bool) {
+        self.name = name
+        self.age = age
+        self.gender = gender
+        self.hasMigraines = hasMigraines
+        self.usesDrugs = usesDrugs
+    }
+    
+    public required convenience init(dictionary: [String: Any]) throws {
+        guard let name = dictionary["name"] as? String,
+            let age = dictionary["age"] as? Int,
+            let gender = dictionary["gender"] as? Gender,
+            let hasMigraines = dictionary["hasMigraines"] as? Bool,
+            let usesDrugs = dictionary["usesDrugs"] as? Bool
+            else {
+                throw DictionaryRepresentableError.parsingFailed
+        }
+        
+        self.init(name: name,
+                  age: age,
+                  gender: gender,
+                  hasMigraines: hasMigraines,
+                  usesDrugs: usesDrugs)
+    }
+    
+    public func toDictionary() -> [String : Any] {
+        return [
+            "name": name,
+            "age": age,
+            "gender": gender,
+            "hasMigraines": hasMigraines,
+            "usesDrugs": usesDrugs
+        ]
+    }
 }

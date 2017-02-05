@@ -13,10 +13,14 @@
 		3A181AEF1E4624B30017F0F2 /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A181AEE1E4624B30017F0F2 /* Patient.swift */; };
 		3A181AF11E4624BD0017F0F2 /* Diagnoser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A181AF01E4624BD0017F0F2 /* Diagnoser.swift */; };
 		3A181AF51E4629AD0017F0F2 /* ToddsSyndromeDiagnoser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A181AF41E4629AD0017F0F2 /* ToddsSyndromeDiagnoser.swift */; };
-		3A181AF71E462E820017F0F2 /* PatientStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A181AF61E462E820017F0F2 /* PatientStore.swift */; };
-		3A181AF91E462F960017F0F2 /* PatientMedicalRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A181AF81E462F960017F0F2 /* PatientMedicalRecord.swift */; };
+		3A181AF71E462E820017F0F2 /* MedicalRecordStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A181AF61E462E820017F0F2 /* MedicalRecordStore.swift */; };
+		3A181AF91E462F960017F0F2 /* MedicalRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A181AF81E462F960017F0F2 /* MedicalRecord.swift */; };
 		3A181AFB1E4631FD0017F0F2 /* Syndrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A181AFA1E4631FD0017F0F2 /* Syndrome.swift */; };
 		3A181AFD1E4632A20017F0F2 /* ToddsSyndrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A181AFC1E4632A20017F0F2 /* ToddsSyndrome.swift */; };
+		3A181AFF1E4637070017F0F2 /* DictionaryRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A181AFE1E4637070017F0F2 /* DictionaryRepresentable.swift */; };
+		3A181B011E463A370017F0F2 /* LocalMedicalRecordStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A181B001E463A370017F0F2 /* LocalMedicalRecordStore.swift */; };
+		3A181B0B1E47889B0017F0F2 /* SyndromeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A181B0A1E47889B0017F0F2 /* SyndromeFactory.swift */; };
+		3A181B0D1E47898C0017F0F2 /* ToddsSyndromeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A181B0C1E47898C0017F0F2 /* ToddsSyndromeFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,10 +43,14 @@
 		3A181AEE1E4624B30017F0F2 /* Patient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
 		3A181AF01E4624BD0017F0F2 /* Diagnoser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Diagnoser.swift; sourceTree = "<group>"; };
 		3A181AF41E4629AD0017F0F2 /* ToddsSyndromeDiagnoser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToddsSyndromeDiagnoser.swift; sourceTree = "<group>"; };
-		3A181AF61E462E820017F0F2 /* PatientStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientStore.swift; sourceTree = "<group>"; };
-		3A181AF81E462F960017F0F2 /* PatientMedicalRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientMedicalRecord.swift; sourceTree = "<group>"; };
+		3A181AF61E462E820017F0F2 /* MedicalRecordStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicalRecordStore.swift; sourceTree = "<group>"; };
+		3A181AF81E462F960017F0F2 /* MedicalRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicalRecord.swift; sourceTree = "<group>"; };
 		3A181AFA1E4631FD0017F0F2 /* Syndrome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Syndrome.swift; sourceTree = "<group>"; };
 		3A181AFC1E4632A20017F0F2 /* ToddsSyndrome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToddsSyndrome.swift; sourceTree = "<group>"; };
+		3A181AFE1E4637070017F0F2 /* DictionaryRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryRepresentable.swift; sourceTree = "<group>"; };
+		3A181B001E463A370017F0F2 /* LocalMedicalRecordStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalMedicalRecordStore.swift; sourceTree = "<group>"; };
+		3A181B0A1E47889B0017F0F2 /* SyndromeFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyndromeFactory.swift; sourceTree = "<group>"; };
+		3A181B0C1E47898C0017F0F2 /* ToddsSyndromeFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToddsSyndromeFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,14 +94,18 @@
 			isa = PBXGroup;
 			children = (
 				3A181AEE1E4624B30017F0F2 /* Patient.swift */,
-				3A181AF81E462F960017F0F2 /* PatientMedicalRecord.swift */,
+				3A181AF81E462F960017F0F2 /* MedicalRecord.swift */,
 				3A181AF01E4624BD0017F0F2 /* Diagnoser.swift */,
 				3A181AF41E4629AD0017F0F2 /* ToddsSyndromeDiagnoser.swift */,
-				3A181AF61E462E820017F0F2 /* PatientStore.swift */,
+				3A181AF61E462E820017F0F2 /* MedicalRecordStore.swift */,
+				3A181B001E463A370017F0F2 /* LocalMedicalRecordStore.swift */,
 				3A181AFA1E4631FD0017F0F2 /* Syndrome.swift */,
 				3A181AFC1E4632A20017F0F2 /* ToddsSyndrome.swift */,
+				3A181AFE1E4637070017F0F2 /* DictionaryRepresentable.swift */,
 				3A181AA81E4623E80017F0F2 /* Diagnoser.h */,
 				3A181AA91E4623E80017F0F2 /* Info.plist */,
+				3A181B0A1E47889B0017F0F2 /* SyndromeFactory.swift */,
+				3A181B0C1E47898C0017F0F2 /* ToddsSyndromeFactory.swift */,
 			);
 			path = Diagnoser;
 			sourceTree = "<group>";
@@ -219,12 +231,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A181AF11E4624BD0017F0F2 /* Diagnoser.swift in Sources */,
-				3A181AF91E462F960017F0F2 /* PatientMedicalRecord.swift in Sources */,
+				3A181AF91E462F960017F0F2 /* MedicalRecord.swift in Sources */,
+				3A181AFF1E4637070017F0F2 /* DictionaryRepresentable.swift in Sources */,
 				3A181AFB1E4631FD0017F0F2 /* Syndrome.swift in Sources */,
 				3A181AFD1E4632A20017F0F2 /* ToddsSyndrome.swift in Sources */,
 				3A181AF51E4629AD0017F0F2 /* ToddsSyndromeDiagnoser.swift in Sources */,
+				3A181B011E463A370017F0F2 /* LocalMedicalRecordStore.swift in Sources */,
 				3A181AEF1E4624B30017F0F2 /* Patient.swift in Sources */,
-				3A181AF71E462E820017F0F2 /* PatientStore.swift in Sources */,
+				3A181AF71E462E820017F0F2 /* MedicalRecordStore.swift in Sources */,
+				3A181B0B1E47889B0017F0F2 /* SyndromeFactory.swift in Sources */,
+				3A181B0D1E47898C0017F0F2 /* ToddsSyndromeFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +444,7 @@
 				3A181ABB1E4623E80017F0F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A181ABC1E4623E80017F0F2 /* Build configuration list for PBXNativeTarget "DiagnoserTests" */ = {
 			isa = XCConfigurationList;
@@ -436,6 +453,7 @@
 				3A181ABE1E4623E80017F0F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,8 +10,17 @@ import Foundation
 
 public typealias SyndromeProbability = Int
 
-public protocol Syndrome {
+public protocol Syndrome: DictionaryRepresentable {
     var name: String { get }
     
     var probability: SyndromeProbability { get }
+}
+
+extension Syndrome {
+    public func toDictionary() -> [String: Any] {
+        return [
+            "name": name,
+            "probability": probability
+        ]
+    }
 }
