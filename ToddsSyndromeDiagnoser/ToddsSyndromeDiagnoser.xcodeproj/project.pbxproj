@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		3A181ACC1E46240F0017F0F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A181ACB1E46240F0017F0F2 /* AppDelegate.swift */; };
-		3A181ACE1E46240F0017F0F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A181ACD1E46240F0017F0F2 /* ViewController.swift */; };
 		3A181AD11E46240F0017F0F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A181ACF1E46240F0017F0F2 /* Main.storyboard */; };
 		3A181AD31E46240F0017F0F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A181AD21E46240F0017F0F2 /* Assets.xcassets */; };
 		3A181AD61E46240F0017F0F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A181AD41E46240F0017F0F2 /* LaunchScreen.storyboard */; };
 		3A181AE11E46240F0017F0F2 /* ToddsSyndromeDiagnoserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A181AE01E46240F0017F0F2 /* ToddsSyndromeDiagnoserTests.swift */; };
 		3A181AED1E46246C0017F0F2 /* Diagnoser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A181AEC1E46246C0017F0F2 /* Diagnoser.framework */; };
+		3A181B2C1E479DCF0017F0F2 /* MedicalRecordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A181B2A1E479DCF0017F0F2 /* MedicalRecordsViewController.swift */; };
+		3A181B2E1E479E050017F0F2 /* MedicalRecordsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A181B2D1E479E050017F0F2 /* MedicalRecordsCell.swift */; };
+		3A181B361E47A7050017F0F2 /* AddPatientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A181B351E47A7050017F0F2 /* AddPatientViewController.swift */; };
+		3A181B391E47C5CB0017F0F2 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A181B381E47C5CB0017F0F2 /* AppRouter.swift */; };
+		3A181B3B1E47C6200017F0F2 /* MedicalRecordsViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A181B3A1E47C6200017F0F2 /* MedicalRecordsViewControllerDelegate.swift */; };
+		3A181B3D1E47C9620017F0F2 /* UIStoryboard+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A181B3C1E47C9620017F0F2 /* UIStoryboard+Extensions.swift */; };
+		3A181B3F1E47CDF60017F0F2 /* AddPatientViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A181B3E1E47CDF60017F0F2 /* AddPatientViewControllerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +35,6 @@
 /* Begin PBXFileReference section */
 		3A181AC81E46240F0017F0F2 /* ToddsSyndromeDiagnoser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToddsSyndromeDiagnoser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A181ACB1E46240F0017F0F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3A181ACD1E46240F0017F0F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3A181AD01E46240F0017F0F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3A181AD21E46240F0017F0F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A181AD51E46240F0017F0F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +43,13 @@
 		3A181AE01E46240F0017F0F2 /* ToddsSyndromeDiagnoserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToddsSyndromeDiagnoserTests.swift; sourceTree = "<group>"; };
 		3A181AE21E46240F0017F0F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A181AEC1E46246C0017F0F2 /* Diagnoser.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Diagnoser.framework; path = "../../../Library/Developer/Xcode/DerivedData/ToddsSyndromeDiagnoser-fmmczjhpknrwpcfhandpgtolelez/Build/Products/Debug-iphonesimulator/Diagnoser.framework"; sourceTree = "<group>"; };
+		3A181B2A1E479DCF0017F0F2 /* MedicalRecordsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicalRecordsViewController.swift; sourceTree = "<group>"; };
+		3A181B2D1E479E050017F0F2 /* MedicalRecordsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicalRecordsCell.swift; sourceTree = "<group>"; };
+		3A181B351E47A7050017F0F2 /* AddPatientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPatientViewController.swift; sourceTree = "<group>"; };
+		3A181B381E47C5CB0017F0F2 /* AppRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		3A181B3A1E47C6200017F0F2 /* MedicalRecordsViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicalRecordsViewControllerDelegate.swift; sourceTree = "<group>"; };
+		3A181B3C1E47C9620017F0F2 /* UIStoryboard+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIStoryboard+Extensions.swift"; path = "../UIStoryboard+Extensions.swift"; sourceTree = "<group>"; };
+		3A181B3E1E47CDF60017F0F2 /* AddPatientViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPatientViewControllerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +94,9 @@
 			isa = PBXGroup;
 			children = (
 				3A181ACB1E46240F0017F0F2 /* AppDelegate.swift */,
-				3A181ACD1E46240F0017F0F2 /* ViewController.swift */,
+				3A181B371E47C5BE0017F0F2 /* AppRouter */,
+				3A181B291E479DCF0017F0F2 /* MedicalRecordsViewController */,
+				3A181B341E47A7050017F0F2 /* AddPatientViewController */,
 				3A181ACF1E46240F0017F0F2 /* Main.storyboard */,
 				3A181AD21E46240F0017F0F2 /* Assets.xcassets */,
 				3A181AD41E46240F0017F0F2 /* LaunchScreen.storyboard */,
@@ -106,6 +120,34 @@
 				3A181AEC1E46246C0017F0F2 /* Diagnoser.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3A181B291E479DCF0017F0F2 /* MedicalRecordsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3A181B2A1E479DCF0017F0F2 /* MedicalRecordsViewController.swift */,
+				3A181B3A1E47C6200017F0F2 /* MedicalRecordsViewControllerDelegate.swift */,
+				3A181B2D1E479E050017F0F2 /* MedicalRecordsCell.swift */,
+			);
+			path = MedicalRecordsViewController;
+			sourceTree = "<group>";
+		};
+		3A181B341E47A7050017F0F2 /* AddPatientViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3A181B351E47A7050017F0F2 /* AddPatientViewController.swift */,
+				3A181B3E1E47CDF60017F0F2 /* AddPatientViewControllerDelegate.swift */,
+			);
+			path = AddPatientViewController;
+			sourceTree = "<group>";
+		};
+		3A181B371E47C5BE0017F0F2 /* AppRouter */ = {
+			isa = PBXGroup;
+			children = (
+				3A181B381E47C5CB0017F0F2 /* AppRouter.swift */,
+				3A181B3C1E47C9620017F0F2 /* UIStoryboard+Extensions.swift */,
+			);
+			path = AppRouter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,8 +253,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A181ACE1E46240F0017F0F2 /* ViewController.swift in Sources */,
+				3A181B3B1E47C6200017F0F2 /* MedicalRecordsViewControllerDelegate.swift in Sources */,
+				3A181B3F1E47CDF60017F0F2 /* AddPatientViewControllerDelegate.swift in Sources */,
+				3A181B2E1E479E050017F0F2 /* MedicalRecordsCell.swift in Sources */,
 				3A181ACC1E46240F0017F0F2 /* AppDelegate.swift in Sources */,
+				3A181B361E47A7050017F0F2 /* AddPatientViewController.swift in Sources */,
+				3A181B391E47C5CB0017F0F2 /* AppRouter.swift in Sources */,
+				3A181B2C1E479DCF0017F0F2 /* MedicalRecordsViewController.swift in Sources */,
+				3A181B3D1E47C9620017F0F2 /* UIStoryboard+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +466,7 @@
 				3A181AE71E46240F0017F0F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A181AE81E46240F0017F0F2 /* Build configuration list for PBXNativeTarget "ToddsSyndromeDiagnoserTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +475,7 @@
 				3A181AEA1E46240F0017F0F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

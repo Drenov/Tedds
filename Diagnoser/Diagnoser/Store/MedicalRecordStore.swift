@@ -9,6 +9,6 @@
 import Foundation
 
 public protocol MedicalRecordStore {
-    func loadMedicalRecords(completion: ([MedicalRecord]) -> Void) throws
-    func saveMedicalRecords(_ medicalRecords: [MedicalRecord], completion: () -> Void) throws
+    func loadMedicalRecords(completion: (([MedicalRecord]) -> Void)?) throws
+    func saveMedicalRecords(_ medicalRecords: [MedicalRecord], completion: (() -> Void)?) throws
 }

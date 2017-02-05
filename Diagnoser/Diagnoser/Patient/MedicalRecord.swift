@@ -9,11 +9,11 @@
 import Foundation
 
 public class MedicalRecord: DictionaryRepresentable {
-    let patient: Patient
+    public let patient: Patient
     
-    private (set) var syndromes: [Syndrome] = []
+    private(set) public var syndromes: [Syndrome] = []
     
-    init(patient: Patient) {
+    public init(patient: Patient) {
         self.patient = patient
     }
     
@@ -39,11 +39,11 @@ public class MedicalRecord: DictionaryRepresentable {
         ]
     }
     
-    func addSyndrome(_ syndrome: Syndrome) {
+    public func addSyndrome(_ syndrome: Syndrome) {
         syndromes.append(syndrome)
     }
     
-    func removeSyndrome(_ syndrome: Syndrome) {
+    public func removeSyndrome(_ syndrome: Syndrome) {
         let index = syndromes.index { $0.name == syndrome.name }
         
         if let index = index {

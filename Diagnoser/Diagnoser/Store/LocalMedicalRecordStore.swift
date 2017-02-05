@@ -14,18 +14,28 @@ struct LocalMedicalRecordStoreConstants {
 
 public class LocalMedicalRecordStore: MedicalRecordStore {
     
-    public func loadMedicalRecords(completion: ([MedicalRecord]) -> Void) throws {
-        let unarchivedData = NSKeyedUnarchiver.unarchiveObject(withFile: fullPath.absoluteString)
+    public init() {
         
-        guard let medicalRecordsArray = unarchivedData as? [[String: Any]] else {
+    }
+    
+    public func loadMedicalRecords(completion: (([MedicalRecord]) -> Void)?) throws {
+        let unarchivedData = try Data(contentsOf: fullPath)
+        
+        guard unarchivedData != nil else {
+            completion?([])
+            
+            return
+        }
+        
+        guard let medicalRecordsArray = NSKeyedUnarchiver.unarchiveObject(with: unarchivedData) as? [[String: Any]] else {
             throw DictionaryRepresentableError.parsingFailed
         }
         
         let medicalRecords = try medicalRecordsArray.map { try MedicalRecord(dictionary: $0) }
-        completion(medicalRecords)
+        completion?(medicalRecords)
     }
     
-    public func saveMedicalRecords(_ medicalRecords: [MedicalRecord], completion: () -> Void) throws {
+    public func saveMedicalRecords(_ medicalRecords: [MedicalRecord], completion: (() -> Void)?) throws {
         let medicalRecordsArray = medicalRecords.map { $0.toDictionary() }
         let archivedData = NSKeyedArchiver.archivedData(withRootObject: medicalRecordsArray)
         
@@ -34,7 +44,7 @@ public class LocalMedicalRecordStore: MedicalRecordStore {
         
         try archivedData.write(to: fullPath)
         
-        completion()
+        completion?()
     }
     
     private func getDocumentsDirectory() -> URL {

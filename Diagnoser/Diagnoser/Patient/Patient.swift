@@ -14,12 +14,12 @@ public enum Gender: Int {
 }
 
 public class Patient: DictionaryRepresentable {
-    let name: String
-    let age: Int
-    let gender: Gender
+    public let name: String
+    public let age: Int
+    public let gender: Gender
     
-    let hasMigraines: Bool
-    let usesDrugs: Bool
+    public let hasMigraines: Bool
+    public let usesDrugs: Bool
     
     public init(name: String, age: Int, gender: Gender, hasMigraines: Bool, usesDrugs: Bool) {
         self.name = name
@@ -32,7 +32,7 @@ public class Patient: DictionaryRepresentable {
     public required convenience init(dictionary: [String: Any]) throws {
         guard let name = dictionary["name"] as? String,
             let age = dictionary["age"] as? Int,
-            let gender = dictionary["gender"] as? Gender,
+            let gender = dictionary["gender"] as? Int,
             let hasMigraines = dictionary["hasMigraines"] as? Bool,
             let usesDrugs = dictionary["usesDrugs"] as? Bool
             else {
@@ -41,7 +41,7 @@ public class Patient: DictionaryRepresentable {
         
         self.init(name: name,
                   age: age,
-                  gender: gender,
+                  gender: gender == 0 ? .male : .female,
                   hasMigraines: hasMigraines,
                   usesDrugs: usesDrugs)
     }
@@ -50,7 +50,7 @@ public class Patient: DictionaryRepresentable {
         return [
             "name": name,
             "age": age,
-            "gender": gender,
+            "gender": gender == .male ? 0 : 1,
             "hasMigraines": hasMigraines,
             "usesDrugs": usesDrugs
         ]

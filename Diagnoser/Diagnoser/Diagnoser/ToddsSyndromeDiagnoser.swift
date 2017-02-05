@@ -9,6 +9,10 @@
 import Foundation
 
 public class ToddsSyndromeDiagnoser: Diagnoser {
+    public init() {
+        
+    }
+    
     public func diagnose(patient: Patient) -> Syndrome {
         var probability: SyndromeProbability = 0
         
